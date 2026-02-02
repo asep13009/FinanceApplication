@@ -1,0 +1,17 @@
+package org.asep.finance.dto;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+import java.math.BigDecimal;
+
+@Data
+@AllArgsConstructor
+public class LatestIdrRateDto {
+
+    private String currency;
+    private BigDecimal rate;
+    @JsonProperty("USD_BuySpread_IDR")
+    private BigDecimal usdBuySpreadIdr;
+}

@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+frankfurter:
+  base-url: https://api.frankfurter.app
+  timeout: 10000
+  header:
+    user:
+      agent: idr-rate-aggregator/1.0
+
+github:
+  username: asep13009
